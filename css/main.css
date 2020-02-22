@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  color: #070439;
+  font-family: "Open sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.mainWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainWrapper {
+    padding: 100px;
+  }
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navitems a {
+  display: inline-block;
+  padding-right: 30px;
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  header .navitems a {
+    padding-right: 60px;
+  }
+}
+
+section.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  vertical-align: center;
+  margin-bottom: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  section.hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.heroText {
+  padding-top: 100px;
+}
+
+.heroText h1 {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.65;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroText h1 {
+    font-size: 38px;
+    text-align: left;
+  }
+}
+
+.heroText p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroText p {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.heroText form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heroText form input[type=email] {
+  padding: 20px 15px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #bfbfbf;
+  font-size: 14px;
+}
+
+.heroText form input[type=submit] {
+  background: #3065f8;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 13px -4px #8c8c8c;
+          box-shadow: 0px 0px 13px -4px #8c8c8c;
+  margin-top: 15px;
+}
+
+.heroText form input[type=submit]:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #737373;
+          box-shadow: 0px 0px 20px 0px #737373;
+}
+
+@media screen and (min-width: 600px) {
+  .heroText form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .heroText form input[type=email] {
+    padding: 10px 150px 10px 20px;
+    margin-right: 15px;
+  }
+  .heroText form input[type=submit] {
+    padding: 20px 60px;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .heroText form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
