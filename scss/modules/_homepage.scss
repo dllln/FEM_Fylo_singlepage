@@ -3,16 +3,15 @@ body{
     //font-size: 16px;
     color: $darkBlue;
     font-family: $font-body;
-    overflow-x: hidden;
 }
 
 .mainWrapper{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 40px;
 
-    @media screen and (min-width: 1024px){
-        padding: 100px;
+    @media (min-width: 1024px){
+        padding: 60px;
     }
 }
 
@@ -37,7 +36,7 @@ header{
         color: hsl(243, 87%, 12%);
         font-family: $font-header;
 
-        @media screen and (min-width:1024px) {
+        @media (min-width:1024px) {
             padding-right: 60px;     
         }
     }
@@ -51,14 +50,21 @@ section.hero{
     flex-direction: column-reverse;
     vertical-align: center;
     margin-bottom: 200px;
+    max-width: 100%;
 
-    @media screen and (min-width:1024px){
+    @media (min-width:1024px){
         flex-direction: row;
+        
     }
 }
 
 .heroText{
     padding-top: 100px;
+
+    @media (min-width: 1024px){
+        max-width: 42%;
+        margin-right: 60px;
+    }
 
     h1{
         font-size: 32px;
@@ -67,7 +73,7 @@ section.hero{
         line-height: 1.65;
         text-align: center;
 
-        @media screen and (min-width:1024px){
+        @media (min-width:1024px){
             font-size: 38px;
             text-align: left;
         }
@@ -76,12 +82,11 @@ section.hero{
     p{
         text-align: center;
         font-size: 22px;
-        // color: #000;
         line-height: 1.5;
         margin-top: 40px;
         margin-bottom: 40px;
 
-        @media screen and (min-width:1024px){
+        @media (min-width:1024px){
             font-size: 18px;
             text-align: left;
         }
@@ -116,7 +121,7 @@ section.hero{
             }
         }
 
-        @media screen and (min-width: 600px){
+        @media (min-width: 600px){
             flex-direction: row;
             justify-content: center;
             align-content: center;
@@ -134,11 +139,177 @@ section.hero{
             }
         }
         
-        @media screen and (min-width: 1000px){
+        @media (min-width: 1000px){
             flex-direction: row;
             justify-content: start;
             align-content: center;
         }
 
     }
+}
+.curve{
+    width: 100%;
+    height: 100px;
+    margin-bottom: -10px;
+    background-color: #ffff;
+}
+
+
+section.mainCTA {
+    background-color: $grayBlue;
+
+    .cta_container{
+    display: flex;
+    flex-direction: column-reverse;
+    vertical-align: center;
+
+    @media (min-width:1024px) {
+        flex-direction: row;
+    }
+}
+
+
+    .cta_text{
+
+        @media (min-width: 1024px){
+            margin-right: 100px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: $font-header;
+            color: $darkBlue;
+            margin-bottom: 40px;
+            margin-top: 100px;
+            text-align: center;
+
+            @media (min-width: 1024px){
+                font-size: 36px;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                text-align: left;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 1.5;
+            color: HSL(251,8%,61%);
+
+            @media (min-width: 1024px) {
+                font-size: 16px;
+                color: #000;
+            }
+        }
+
+        .green_text {
+            text-align: center;
+            border-bottom: 2px solid $modCyan;
+            max-width: 251px;
+            margin: 60px auto;
+            
+            p{
+                display: flex;
+                align-items: center;
+                color: $modCyan;
+                font-size: 22px;
+                padding-bottom: 5px;
+
+                img{
+                    margin-left: 20px;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            @media (min-width: 1024px){
+                text-align: left;
+                margin: 30px 0 40px 0;
+                max-width: 175px;
+
+                p{
+                    font-size: 16px;
+
+                    img {
+                        height: 15px;
+                        width: 15px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            
+            
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: -2px -2px 39px -16px darken($color: $lightGray, $amount: 10%);
+            max-width: 566px;
+            margin: 0 auto 120px auto;
+    
+            .quote{
+                padding: 30px;
+                color: #000;
+    
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+
+            .avatar{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 30px;
+                padding-bottom: 50px;
+
+                img{
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                }
+
+                .name{
+                    padding-left: 15px;
+                    line-height: 1.5;
+                    color: #000;
+
+                    h3{
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+
+                    p.small{
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+            }
+
+            @media (min-width: 1024px){
+                margin: 40px 0;
+            }
+        }
+
+    }
+
+    .cta_image {
+
+        img{
+            width: 95%;
+            margin: 60px auto; 
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @media (min-width: 1024px){
+                width: 75%;
+                margin-top: 100px;
+            }
+            
+        }
+    }
+        
 }
