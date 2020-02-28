@@ -60,18 +60,17 @@ html,
 body {
   color: #070439;
   font-family: "Open sans", sans-serif;
-  overflow-x: hidden;
 }
 
 .mainWrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 60px;
+  padding: 40px;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .mainWrapper {
-    padding: 100px;
+    padding: 60px;
   }
 }
 
@@ -108,7 +107,7 @@ header .navitems a {
   font-family: "Raleway", sans-serif;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   header .navitems a {
     padding-right: 60px;
   }
@@ -124,9 +123,10 @@ section.hero {
           flex-direction: column-reverse;
   vertical-align: center;
   margin-bottom: 200px;
+  max-width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   section.hero {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -139,6 +139,13 @@ section.hero {
   padding-top: 100px;
 }
 
+@media (min-width: 1024px) {
+  .heroText {
+    max-width: 42%;
+    margin-right: 60px;
+  }
+}
+
 .heroText h1 {
   font-size: 32px;
   font-family: "Raleway", sans-serif;
@@ -147,7 +154,7 @@ section.hero {
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .heroText h1 {
     font-size: 38px;
     text-align: left;
@@ -162,7 +169,7 @@ section.hero {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .heroText p {
     font-size: 18px;
     text-align: left;
@@ -205,7 +212,7 @@ section.hero {
           box-shadow: 0px 0px 20px 0px #737373;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .heroText form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -229,7 +236,7 @@ section.hero {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .heroText form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -240,6 +247,192 @@ section.hero {
             justify-content: start;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+}
+
+.curve {
+  width: 100%;
+  height: 100px;
+  margin-bottom: -10px;
+  background-color: #ffff;
+}
+
+section.mainCTA {
+  background-color: #f6f6fe;
+}
+
+section.mainCTA .cta_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  vertical-align: center;
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_text {
+    margin-right: 100px;
+  }
+}
+
+section.mainCTA .cta_text h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_text h1 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}
+
+section.mainCTA .cta_text p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: HSL(251, 8%, 61%);
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_text p {
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+section.mainCTA .cta_text .green_text {
+  text-align: center;
+  border-bottom: 2px solid #3c9f8f;
+  max-width: 251px;
+  margin: 60px auto;
+}
+
+section.mainCTA .cta_text .green_text p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3c9f8f;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+section.mainCTA .cta_text .green_text p img {
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_text .green_text {
+    text-align: left;
+    margin: 30px 0 40px 0;
+    max-width: 175px;
+  }
+  section.mainCTA .cta_text .green_text p {
+    font-size: 16px;
+  }
+  section.mainCTA .cta_text .green_text p img {
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+  }
+}
+
+section.mainCTA .cta_text .card {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px -2px 39px -16px #a6a6a6;
+          box-shadow: -2px -2px 39px -16px #a6a6a6;
+  max-width: 566px;
+  margin: 0 auto 120px auto;
+}
+
+section.mainCTA .cta_text .card .quote {
+  padding: 30px;
+  color: #000;
+}
+
+section.mainCTA .cta_text .card .quote img {
+  height: 20px;
+  width: 20px;
+}
+
+section.mainCTA .cta_text .card .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+section.mainCTA .cta_text .card .avatar img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+section.mainCTA .cta_text .card .avatar .name {
+  padding-left: 15px;
+  line-height: 1.5;
+  color: #000;
+}
+
+section.mainCTA .cta_text .card .avatar .name h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section.mainCTA .cta_text .card .avatar .name p.small {
+  font-size: 14px;
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_text .card {
+    margin: 40px 0;
+  }
+}
+
+section.mainCTA .cta_image img {
+  width: 95%;
+  margin: 60px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  section.mainCTA .cta_image img {
+    width: 75%;
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */
