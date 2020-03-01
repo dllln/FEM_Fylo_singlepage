@@ -435,4 +435,183 @@ section.mainCTA .cta_image img {
     margin-top: 100px;
   }
 }
+
+section.secondCTA {
+  background-color: #585989;
+}
+
+section.secondCTA .email_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (min-width: 1024px) {
+  section.secondCTA .email_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+section.secondCTA .email_container .text_left h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+section.secondCTA .email_container .text_left p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  section.secondCTA .email_container .text_left {
+    margin-right: 200px;
+  }
+  section.secondCTA .email_container .text_left h1 {
+    text-align: left;
+    font-size: 36px;
+  }
+  section.secondCTA .email_container .text_left p {
+    text-align: left;
+    font-size: 16px;
+    max-width: 65%;
+  }
+}
+
+section.secondCTA .email_container .form_right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.secondCTA .email_container .form_right form input[type=email] {
+  padding: 15px 100px 15px 20px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #bfbfbf;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+section.secondCTA .email_container .form_right form input[type=submit] {
+  padding: 15px;
+  background-color: #3065f8;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 10px -2px #26273b;
+          box-shadow: 0px 0px 10px -2px #26273b;
+}
+
+@media (min-width: 1024px) {
+  section.secondCTA .email_container .form_right form {
+    margin-top: 50px;
+  }
+  section.secondCTA .email_container .form_right form input[type=email] {
+    padding: 15px 340px 15px 20px;
+    margin-bottom: 20px;
+  }
+  section.secondCTA .email_container .form_right form input[type=submit] {
+    max-width: 200px;
+    font-size: 14px;
+  }
+}
+
+footer .nav_columns {
+  background-color: #070439;
+  color: #fff;
+}
+
+footer .nav_columns .column_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1024px) {
+  footer .nav_columns .column_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+footer .nav_columns .column_container .column {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 2.3;
+}
+
+@media (min-width: 1024px) {
+  footer .nav_columns .column_container .column {
+    margin-right: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .nav_columns .column_container .column_2 {
+    padding-top: 60px;
+  }
+}
+
+footer .nav_columns .column_container .column_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .nav_columns .column_container .column_icons i.socialIcons {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
